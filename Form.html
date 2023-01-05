@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab01_Task:B</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            width: 100%;            
+        }
+        .container .form{
+            border: solid 1px black;
+            display: flex;
+            width: 30%;
+            height: 600px;
+            flex-direction: column;
+            border-radius: 45px;
+        }
+        .container .form .heading3{
+            margin-left: 150px;
+        }
+        .container .form .heading4{
+            margin-left: 130px;
+        }
+        .container .form .row{
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        .container .form .row .gender{
+            height: 30px;
+            border-radius: 25px;
+            width: 11rem;
+            border: solid 2px grey;
+        }
+        .container .form .row input{
+            height: 25px;
+            border-radius: 25px;
+            border: solid 2px grey;
+        }
+        .sub_Info{
+            border-radius: 12px;
+            border: solid 2px grey;
+            height: 5rem;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="form">
+                <form action="">
+                    <h5 class="heading3">Personal Info:</h5>
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="name" placeholder="Enter Name" >
+                        <input type="email" name="email" placeholder="Enter Email">
+                    </div>
+                    <div class="row">
+                        <label for="phone">Phone</label>
+                        <label for="gender">Gender</label>
+                    </div>
+                    <div class="row">
+                        <input type="number" name="phone" placeholder="Enter Phone No#">
+                        <!-- <input type="text" name="gender" placeholder="Enter Gender"> -->
+                        <select name="gender" id="" class="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="dob">Date Of Birth</label>
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="row">
+                        <input type="date" class="gender" name="dob" placeholder="Enter Data Of Birth">
+                        <input type="text" name="address" placeholder="Enter Address">
+                    </div>
+                    <h5 class="heading3">Education:</h5>
+                    <div class="row">
+                        <label for="FSc">FSC Institute</label>
+                        <label for="Matric">Matric Institute</label>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="FSc">
+                        <input type="text" name="Matric">
+                    </div>
+                    <div class="row">
+                        <label for="FSc">FSC Obtained Marks</label>
+                        <label for="Matric">Matric Obtained Marks</label>
+                    </div>
+                    <div class="row">
+                        <input type="number" name="F.ScMarks" placeholder="Enter Marks">
+                        <input type="number" name="MatricMarks" placeholder="Enter Marks">
+                    </div>
+                    <h5 class="heading4">Subject Information:</h5>
+                    <div class="row">
+                        <textarea name="sub_Info" class="sub_Info" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
